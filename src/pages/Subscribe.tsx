@@ -9,6 +9,7 @@ import {
 } from '../graphql/generated';
 
 import reactIconImg from '../assets/ReactJS-icon.png';
+import codeMockupImg from '../assets/code-mockup.png';
 
 export function Subscribe() {
   const [name, setName] = useState('');
@@ -112,7 +113,7 @@ export function Subscribe() {
           </div>
         </div>
         <div>
-          <img src='/src/assets/code-mockup.png' alt='' />
+          <img src={codeMockupImg} alt='' />
         </div>
       </div>
     </div>
