@@ -8,7 +8,7 @@ import {
   useGetUserByEmailLazyQuery,
 } from '../graphql/generated';
 
-import reactIconImg from './ReactJS-icon.png';
+import reactIconImg from '../assets/ReactJS-icon.png';
 
 export function Subscribe() {
   const [name, setName] = useState('');
