@@ -69,7 +69,7 @@ export function Subscribe() {
               melhores oportunidades do mercado.
             </p>
           </div>
-          <div className='p-8 bg-gray-700 rounded border border-gray-500 min-w-[360px] sm:mt-8 sm:px-6'>
+          <div className='p-8 bg-gray-700 rounded border border-gray-500 min-w-[360px] sm:mt-8 sm:px-6 sm:rounded-none'>
             <strong className='text-2xl text-gray-200'>
               Inscreva-se gratuitamente
             </strong>
