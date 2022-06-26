@@ -17,31 +17,30 @@ export function Subscribe() {
 
   const navigate = useNavigate();
 
-  const [getUserByEmail] = useGetUserByEmailLazyQuery({
-    variables: {
-      email,
-    },
-  });
+  const [getUserByEmail, _] = useGetUserByEmailLazyQuery();
 
   const [createSubscribe, { loading }] = useCreateSubscribeMutation({
     variables: {
-      name: name,
-      email: email,
-    },
-    onCompleted: () => {
-      navigate('/event');
-    },
-    onError: error => {
-      console.log(error);
+      email,
+      name,
     },
   });
 
   const onSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    const emailIsExists = await getUserByEmail();
+    const emailIsExists = await getUserByEmail({
+      variables: {
+        email: email.trim().toLocaleLowerCase(),
+      },
+    });
 
-    if (!emailIsExists.data) {
-      await createSubscribe();
+    if (!emailIsExists.data?.subscriber?.email) {
+      await createSubscribe({
+        variables: {
+          email: email.trim().toLocaleLowerCase(),
+          name: name.trim().toLocaleLowerCase(),
+        },
+      });
     } else {
       navigate('/event');
     }
