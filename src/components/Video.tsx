@@ -96,20 +96,20 @@ export function Video(props: VideoProps) {
         <div className='flex gap-8 mt-28 md:flex-col sm:flex-col'>
           <Link
             to=''
-            className='flex items-stretch bg-gray-700 overflow-hidden rounded-md gap-6 hover:bg-gray-600 transition-colors'>
-            <div className='flex items-center justify-center bg-green-500 h-full p-6 sm:h-auto'>
+            className='flex items-stretch bg-gray-700 overflow-hidden rounded-md gap-6 hover:bg-gray-600 transition-colors  '>
+            <div className='flex items-center justify-center bg-green-500 h-full  p-6 sm:h-auto md:px-4 sm:py-2 sm:px-2'>
               <FileArrowDown size={40} />
             </div>
             <div className='py-6 leading-relaxed '>
-              <strong className='text-2xl first-letter:capitalize'>
+              <strong className='text-2xl first-letter:capitalize sm:text-xl'>
                 Material complementar
               </strong>
-              <p className='text-sm text-gray-300 mt-2'>
+              <p className='text-sm text-gray-300 mt-2 sm:text-xs'>
                 Acesse o material complementar para acelerar o seu
                 desenvolvimento
               </p>
             </div>
-            <div className='flex items-center justify-center h-full p-6 text-blue-500 sm:h-auto'>
+            <div className='flex items-center justify-center h-full p-6 text-blue-500 sm:h-auto '>
               <CaretRight size={24} />
             </div>
           </Link>
@@ -117,14 +117,14 @@ export function Video(props: VideoProps) {
           <Link
             to=''
             className='flex items-stretch bg-gray-700 overflow-hidden rounded-md gap-6 hover:bg-gray-600'>
-            <div className='flex items-center justify-center bg-green-500 h-full p-6 sm:h-auto'>
+            <div className='flex items-center justify-center bg-green-500 h-full p-6 sm:h-auto md:px-4 sm:py-2 sm:px-2'>
               <Image size={40} />
             </div>
             <div className='py-6 leading-relaxed '>
-              <strong className='text-2xl first-letter:capitalize'>
+              <strong className='text-2xl first-letter:capitalize sm:text-xl'>
                 Wallpapers
               </strong>
-              <p className='text-sm text-gray-300 mt-2'>
+              <p className='text-sm text-gray-300 mt-2 sm:text-xs'>
                 Baixe wallpapers exclusivos do Ignite Lab e personalize a sua
                 máquina
               </p>
