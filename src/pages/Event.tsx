@@ -10,7 +10,7 @@ export function Event() {
   return (
     <>
       <Header />
-      <main className='flex flex-1 relative'>
+      <main className='flex flex-1 relative md:flex-col sm:flex-col'>
         {slug ? (
           <Video lessonSlug={slug} />
         ) : (
