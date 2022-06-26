@@ -11,12 +11,6 @@ import {
 import reactIconImg from './ReactJS-icon.png';
 
 export function Subscribe() {
-  const boxImg = document.getElementById(
-    'react__icon__img'
-  ) as HTMLImageElement;
-
-  boxImg.src = reactIconImg;
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
