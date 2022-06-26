@@ -13,7 +13,7 @@ import reactIconImg from '../assets/ReactJS-icon.png';
 export function Subscribe() {
   const boxImg = document.getElementById(
     'react__icon__img'
-  )! as HTMLImageElement;
+  ) as HTMLImageElement;
 
   boxImg.src = reactIconImg;
 
@@ -56,7 +56,7 @@ export function Subscribe() {
     <div className='bg-blur bg-cover min-h-screen relative overflow-hidden '>
       <img
         className='max-w-[654px] min-w-[573px] w-full absolute block left-2/4 -translate-x-2/4 mt-[10px] pointer-events-none'
-        src=''
+        src={reactIconImg}
         alt=''
         id='react__icon__img'
       />
