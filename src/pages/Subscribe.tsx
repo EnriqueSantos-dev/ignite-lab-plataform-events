@@ -8,7 +8,15 @@ import {
   useGetUserByEmailLazyQuery,
 } from '../graphql/generated';
 
+import reactIconImg from '../assets/ReactJS-icon.png';
+
 export function Subscribe() {
+  const boxImg = document.getElementById(
+    'react__icon__img'
+  )! as HTMLImageElement;
+
+  boxImg.src = reactIconImg;
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
 
@@ -48,8 +56,9 @@ export function Subscribe() {
     <div className='bg-blur bg-cover min-h-screen relative overflow-hidden '>
       <img
         className='max-w-[654px] min-w-[573px] w-full absolute block left-2/4 -translate-x-2/4 mt-[10px] pointer-events-none'
-        src='/src/assets/ReactJS-icon.png'
+        src=''
         alt=''
+        id='react__icon__img'
       />
       <div className='flex flex-col max-w-[1100px] w-full mx-auto mt-20 '>
         <div className='flex justify-between  sm:flex-col '>

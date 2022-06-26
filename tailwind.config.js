@@ -22,6 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         blur: 'url(/src/assets/blur-bg.png)',
+        reactIconBg: 'url(/src/assets/ReactJS-icon.png)',
       },
       fontFamily: {
         sans: ['Roboto, sans-serif'],
